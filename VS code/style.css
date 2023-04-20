@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.mountains{
+    transform: translateZ(-40px) scale(5);
+}
+
+.man{
+    transform: translateZ(-20px) scale(3);
+}
+.mountains,.man{
+    position:absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    position: relative;
+    top: 150px;
+    left:40%;
+    font-size:50px;
+    text-shadow: 5px 5px 9px black;
+}
+h3{
+    font-size: 3rem;
+    color: black;
+}
+p{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding: 5rem 0;
+}
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
